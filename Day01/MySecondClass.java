@@ -9,7 +9,7 @@ public class MySecondClass { // 자바 클래스의 시작
 	  // 메서드 블록 
 	  //-- .. 문장들
 	  System.out.println("Git Commit 후 변경해보기");
-	  System.out.println("집에서 작업했어요.")
+	  System.out.println("집에서 작업했어요.");
 	} // 메소드의 끝 
 	
 } // 자바 클래스의 끝 
