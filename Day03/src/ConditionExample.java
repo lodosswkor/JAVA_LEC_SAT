@@ -96,7 +96,6 @@ public class ConditionExample {
 		} else {
 			System.out.println("나이가 어려서 탈 수 없어요");
 		}
-	
 	}
 	
 }
