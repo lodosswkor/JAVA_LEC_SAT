@@ -10,7 +10,7 @@
 
 public class ForLoopExample {
 
-	public static void main(String args[]) {
+	public static void main(String args[]) throws InterruptedException {
 		
 		//1-10까지 출력하세요
 		System.out.println(1); 
@@ -72,6 +72,18 @@ public class ForLoopExample {
 			
 		}
 		
+		Thread.sleep(1000);
+
+		System.out.println("\n\n\n\n====== 숙제질 ========");
+		
+		for(int x1 = 1; x1 <= 9; x1 ++) { // x축 결정됨 
+			
+			for(int y1 = 2; y1 <= 9; y1++ ) { // y축 
+				System.out.print(y1 + "x" + x1 + "=" + (x1 * y1) + "\t"); 
+			}
+			
+			System.out.print("\n");
+		}
 		
 		
 		
