@@ -10,7 +10,7 @@
 
 public class ForLoopExample {
 
-	public static void main(String args[]) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 		
 		//1-10까지 출력하세요
 		System.out.println(1); 
