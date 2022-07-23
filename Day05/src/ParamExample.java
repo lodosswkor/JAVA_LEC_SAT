@@ -11,6 +11,9 @@
 
 public class ParamExample {
 
+	
+	
+	
 	static void printAddValue(int a, int b) { // (일반타입) pass by value 
 		int z = a + b;
 		a++;
@@ -21,6 +24,7 @@ public class ParamExample {
 	
 	static void printAddArray(int[] x) { // pass by reference 
 		x[1] = 10; 
+		printAddValue(1,2);
 	}
 	
 	
