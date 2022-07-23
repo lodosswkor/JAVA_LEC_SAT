@@ -64,13 +64,12 @@ public class ClassExample {
 	 
 	 //--------------------------------------------------
 	 public static void main(String args[]) {
-		 
 		 ClassExample ex = new ClassExample(); 
 		 int value = ex.add(10, 20);
 		 ex.printAdd(10,20);
-		 System.out.println(value);
-		 
+		 System.out.println(value);	 
 	 }
+	 
 }
 
 
