@@ -7,7 +7,8 @@ public class ObjectClassMethodExample {
 		String b = "이종석";
 		String c = a; 
 		
-		System.out.println("a == b : " +  a == b); // false 
+		System.out.println("a == b : " +  (a == b)); // false 
+		System.out.println(a == b); // true 
 		System.out.println("a.equals(b) : " +  a.equals(b)); // true
 		
 		//-- String 객체의 hashCode() 메소드는 
