@@ -18,6 +18,7 @@ public class BoyStudent extends Student {
 	//-- 메소드의 재정의 
 	@Override
 	public void gotoCR() {
+		super.gotoCR();
 		System.out.println("남자 화장실을 갑니다.");
 	} 
 	
