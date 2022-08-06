@@ -1,4 +1,5 @@
-import java.lang.*; 
+import java.lang.*;
+import java.util.Enumeration;
 import java.util.Properties; 
 
 public class SystemClassMethodExample {
@@ -16,6 +17,12 @@ public class SystemClassMethodExample {
 		//-- java에서 지원하는 Properties를 사용하는방식. 
 		
 	    Properties prop = System.getProperties(); 
+	    Enumeration  en = prop.propertyNames(); 
+	    while(en.hasMoreElements()) {
+	    	String key = (String)en.nextElement();
+            String value = prop.getProperty(key);
+            System.out.println(key + "=" + value);
+	    }
 	    //prop.forEach(); 
 	    
 	}

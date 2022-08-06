@@ -1,2 +1,4 @@
 ﻿eclipse
 jdk
+*.exe
+*.msi
