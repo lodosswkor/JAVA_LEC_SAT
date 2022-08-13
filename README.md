@@ -89,3 +89,29 @@
 무료강의 : https://www.inflearn.com/course/%EC%A7%80%EC%98%A5%EC%97%90%EC%84%9C-%EC%98%A8-git#curriculum
 
 https://github.com/lodosswkor/JAVA_LEC_SAT
+
+
+
+# DB 정보 
+### Host : javalec-sat.crwq4oaekhum.ap-northeast-2.rds.amazonaws.com 
+### Port : 3306 
+### ID : 메일아이디
+### Pwd : 메일아이디1234 
+### DB명 : 메일아이디_db 
+
+```java 
+
+Class.forName("com.mysql.cj.jdbc.Driver");
+
+conn = DriverManager.getConnection(
+		"jdbc:mysql://javalec-sat.crwq4oaekhum.ap-northeast-2.rds.amazonaws.com:3306/메일아이디_db",
+		"메일아이디", // <-- 아이디
+		"메일아이디1234" // <-- 패스워드
+		);
+
+```
+
+입니당 ^^
+
+
+
