@@ -31,6 +31,7 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 //import java.sql.*; 
@@ -38,17 +39,30 @@ import java.sql.Statement;
 
 public class MariaDBExample {
 	
-	public static void main(String args[]) throws Exception {
+	public static void main(String args[])  {
 		
 		// 데이터베이스 커넥션 객체 
 		Connection conn = null; 
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
-		conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:7306/javadb",
-				"root", // <-- 제 개인 
-				"123456789" // <-- 제 개인 패스워드 
-				);
+		try {
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			// ClassNotFoundException 발생가능 
+			
+			conn = DriverManager.getConnection(
+					"jdbc:mysql://localhost:7306/javadb",
+					"root", // <-- 제 개인 
+					"123456789" // <-- 제 개인 패스워드 
+					);
+		    // SQLException 발생가능 
+			
+		} catch(ClassNotFoundException ex) {
+			System.out.println("jdbc jar가 없네요."); 
+		} catch(SQLException ex) {
+			System.out.println(ex.getMessage());
+		} catch(Exception ex) {
+			System.out.println("알수없는 예외 발생");
+		}
 		
 		
 		if(conn == null) {

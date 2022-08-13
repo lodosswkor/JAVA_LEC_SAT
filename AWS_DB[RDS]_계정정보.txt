@@ -1,0 +1,7 @@
+
+
+Host : javalec-sat.crwq4oaekhum.ap-northeast-2.rds.amazonaws.com 
+Port : 3306 
+ID : 메일아이디
+PWd : 메일아이디1234 
+DB명 : 메일아이디_db 
