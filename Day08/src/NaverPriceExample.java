@@ -94,6 +94,6 @@ public class NaverPriceExample
 		
 	}
 	
+
 	
-	//-- txt 파일로 저장해보고 
 }
