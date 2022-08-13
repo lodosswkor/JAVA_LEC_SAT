@@ -101,13 +101,13 @@ https://github.com/lodosswkor/JAVA_LEC_SAT
 
 ```java 
 
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			
-			conn = DriverManager.getConnection(
-					"jdbc:mysql://javalec-sat.crwq4oaekhum.ap-northeast-2.rds.amazonaws.com:3306/디비명",
-					"root", // <-- 아이디
-					"123456789" // <-- 패스워드
-					);
+Class.forName("com.mysql.cj.jdbc.Driver");
+
+conn = DriverManager.getConnection(
+		"jdbc:mysql://javalec-sat.crwq4oaekhum.ap-northeast-2.rds.amazonaws.com:3306/메일아이디_db",
+		"메일아이디", // <-- 아이디
+		"메일아이디1234" // <-- 패스워드
+		);
 
 ```
 
