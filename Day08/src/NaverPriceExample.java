@@ -20,7 +20,9 @@ public class NaverPriceExample
 			System.out.print("검색어를 입력해 주세요 : ");
 			String search_text = sc.nextLine(); 
 			
-			String url = "https://search.shopping.naver.com/search/all?query=%s&bt=-1&frm=NVSCPRO";
+			String url = "https://search.shopping.naver.com/search/all?query=%s&bt=-1&frm=NVSCPRO"
+		               + "&sort=price_asc";
+			
 			url = String.format(url, search_text);
 			
 			
