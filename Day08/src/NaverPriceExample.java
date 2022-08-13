@@ -52,6 +52,9 @@ public class NaverPriceExample
 			writeExcelFile("D:\\" + search_text + ".csv", ele); // CSV 파일쓰기 
 			System.out.println("CSV파일을 저장하였습니다.");
 			
+			insertDB(ele); 
+			System.out.println("DB에 저장하였습니다.");
+			
 			// 프로그램 종료 여부 
 			System.out.print("프로그램을 종료 하시겠습니까? (Y,N) : ");
 			String command = sc.nextLine();
@@ -62,7 +65,6 @@ public class NaverPriceExample
 		
 		
 	}
-	
 	
 	//-- Excel (csv - comma split version)  
 	public static void writeExcelFile(String fileName, Elements list) throws Exception {
@@ -94,6 +96,13 @@ public class NaverPriceExample
 		
 	}
 	
+	//-- DB에 인서트 하기
+	public static void insertDB(Elements list) throws Exception {
+		NaverPriceDB db = NaverPriceDB.getInstance(); 
+		db.connectDB(); // DB 열기 
+		db.insertNaverPrice(list); // 데이터 넣기 
+		db.closeDB(); // DB 닫기 
+	}
 
 	
 }
