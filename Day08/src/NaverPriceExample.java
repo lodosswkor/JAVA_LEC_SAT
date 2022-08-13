@@ -49,7 +49,7 @@ public class NaverPriceExample
 //				System.out.println("-----------------------------");
 //			} 
 			
-			writeExcelFile(search_text + ".csv", ele); // CSV 파일쓰기 
+			writeExcelFile("D:\\" + search_text + ".csv", ele); // CSV 파일쓰기 
 			System.out.println("CSV파일을 저장하였습니다.");
 			
 			// 프로그램 종료 여부 
